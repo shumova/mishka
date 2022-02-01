@@ -1,0 +1,52 @@
+.social {
+  list-style-type: none;
+}
+
+.social__link {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+
+  .social__icon {
+    fill: #231f20;
+  }
+
+  &:focus,
+  &:hover {
+    .social__icon {
+      fill: @tiffany-dark-additional;
+    }
+  }
+
+  &:focus:not(:focus-visible) {
+    .social__icon {
+      fill: #231f20;
+    }
+  }
+
+  &:focus:not(:focus-visible):hover {
+    .social__icon {
+      fill: @tiffany-dark-additional;
+    }
+  }
+
+  &:focus:not(:focus-visible):active {
+    .social__icon {
+      fill: fade(@tiffany-dark-additional, 30);
+    }
+  }
+
+  &:focus-visible {
+    outline: none;
+
+    .social__icon {
+      fill: @tiffany-dark-additional;
+    }
+  }
+
+  &:active {
+    .social__icon {
+      fill: fade(@tiffany-dark-additional, 30);
+    }
+  }
+}

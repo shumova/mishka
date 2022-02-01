@@ -1,0 +1,19 @@
+.container {
+  display: grid;
+
+  @media (max-width: @lt-tablet) {
+    grid-template-columns: 1fr 9% 82% 9% 1fr;
+  }
+
+  @media (min-width: @tablet-width) and (max-width: @lt-desktop) {
+    grid-template-columns: 1fr 6.5% 87% 6.5% 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 4% 92% 4% 1fr;
+  }
+}
+
+.container--inner {
+  grid-column: 1 / -1;
+}

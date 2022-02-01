@@ -1,0 +1,24 @@
+.catalog {
+  list-style-type: none;
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 51px;
+  }
+}
+
+.catalog__item {
+  width: 100%;
+
+  @media (max-width: @lt-tablet) {
+    &:not(:first-child) {
+      margin-top: 30px;
+    }
+  }
+
+  @media (min-width: @tablet-width) and (max-width: @lt-desktop) {
+    &:not(:first-child) {
+      margin-top: 54px;
+    }
+  }
+}

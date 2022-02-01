@@ -1,0 +1,45 @@
+.knitting-form__note-and-button-container {
+  @media (min-width: @tablet-width) {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 700px;
+    margin: 0 auto;
+  }
+}
+
+.knitting-form__note {
+  margin: 0;
+
+  @media (max-width: @lt-tablet) {
+    margin-top: 17px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  @media (min-width: @tablet-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    justify-self: end;
+  }
+}
+
+.knitting-form__button {
+  @media (max-width: @lt-tablet) {
+    width: 100%;
+    margin-top: 30px;
+    letter-spacing: -0.6px;
+  }
+
+  @media (min-width: @tablet-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    min-width: 230px;
+    justify-self: start;
+  }
+}
