@@ -43,12 +43,10 @@
   }
 
   @media (min-width: @tablet-width) and (max-width: @lt-desktop) {
-    grid-template-columns: 1fr 50px 42% 45% 50px 1fr;
+    grid-template-columns: 1fr 6.5% 42% 45% 6.5% 1fr;
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: 1fr 50px 34.5% 250px 34.5% 50px 1fr;
-
     &::before {
       grid-column: 1 / -1;
       grid-row: 1 / 2;
@@ -57,6 +55,14 @@
       background-color: @white;
       border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     }
+  }
+
+  @media (min-width: @desktop-width) and (max-width: 1549px) {
+    grid-template-columns: 1fr 4.5% 34% 23% 34% 4.5% 1fr;
+  }
+
+  @media (min-width: 1550px) {
+    grid-template-columns: 1fr 50px 600px 250px 600px 50px 1fr;
   }
 }
 
@@ -82,7 +88,7 @@
   }
 
   @media (min-width: @tablet-width) and (max-width: @lt-desktop) {
-    padding-bottom: 64px;
+    padding-bottom: 62px;
   }
 
   @media (min-width: @desktop-width) {
@@ -91,20 +97,15 @@
 }
 
 .page__main--form {
-  display: grid;
-
   @media (max-width: @lt-tablet) {
-    grid-template-columns: 1fr 260px 1fr;
     padding-bottom: 55px;
   }
 
   @media (min-width: @tablet-width) and (max-width: @lt-desktop) {
-    grid-template-columns: 1fr 668px 1fr;
     padding-bottom: 50px;
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: 1fr 1050px 1fr;
     padding-bottom: 50px;
   }
 }
@@ -117,7 +118,7 @@
 
   @media (max-width: @lt-tablet) {
     padding: 25px 0 25px;
-    grid-template-columns: 1fr 30px 260px 30px 1fr;
+    grid-template-columns: 1fr 9% 82% 9% 1fr;
   }
 
   @media (min-width: @tablet-width) {
@@ -126,12 +127,19 @@
 
   @media (min-width: @tablet-width) and (max-width: @lt-desktop) {
     padding: 51px 0 58px;
-    grid-template-columns: 1fr 50px 16% 45% 26% 50px 1fr;
+    grid-template-columns: 1fr 6.5% 16% 45% 26% 6.5% 1fr;
   }
 
   @media (min-width: @desktop-width) {
     padding: 51px 0 58px;
-    grid-template-columns: 1fr 50px 17% 50% 24% 50px 1fr;
+  }
+
+  @media (min-width: @desktop-width) and (max-width: 1549px) {
+    grid-template-columns: 1fr 4.5% 17% 50% 24% 4.5% 1fr;
+  }
+
+  @media (min-width: 1550px) {
+    grid-template-columns: 1fr 62px 263px 776px 387px 62px 1fr;
   }
 }
 

@@ -54,7 +54,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: 17% 33% 50%;
+    grid-template-columns: 16.5% 33.5% 50%;
     padding: 72px 0 73px;
   }
 }
@@ -73,7 +73,7 @@
 
   @media (min-width: @desktop-width) {
     grid-column: 3 / 4;
-    padding: 91px 40px 90px 144px;
+    padding: 91px 40px 90px 134px;
   }
 }
 
@@ -96,7 +96,7 @@
 
   @media (min-width: @desktop-width) {
     grid-column: 3 / 4;
-    grid-template-columns: 17% 66% 17%;
+    grid-template-columns: 16.5% 66.5% 17%;
     padding: 78px 0 96px;
   }
 }
@@ -117,7 +117,7 @@
   @media (min-width: @desktop-width) {
     grid-column: 3 / 4;
     margin-top: 67px;
-    grid-template-columns: 17% 33% 50%;
+    grid-template-columns: 16.5% 33.5% 50%;
     padding: 94px 0 105px;
   }
 }
@@ -175,35 +175,18 @@
 
 // страница form
 
-.page-main__title--form {
-  grid-column: 1 / 4;
-
-  @media (max-width: @lt-tablet) {
-    grid-template-columns: 1fr 81% 1fr;
-  }
-
-  @media (min-width: @tablet-width) and (max-width: @lt-desktop) {
-    grid-template-columns: 1fr 668px 1fr;
-  }
-
-  @media (min-width: @desktop-width) {
-    grid-template-columns: 1fr 1050px 1fr;
-  }
-}
-
 .page-main__title-text--form {
-  grid-column: 2 / 3;
-  max-width: 100%;
-  margin: 0 auto;
+  grid-column: 3 / 4;
 }
 
 .page-main__subtitle--form {
-  grid-column: 2 / 3;
+  grid-column: 3 / 4;
   display: grid;
   margin: 0;
 
   @media (max-width: @lt-tablet) {
     padding-top: 17px;
+    padding-right: 2px;
     font-size: 13px;
     line-height: 24px;
   }
@@ -219,30 +202,37 @@
 
   @media (min-width: @desktop-width) {
     max-width: 875px;
-    padding-left: 175px;
+    padding-left: 16.5%;
     padding-top: 110px;
   }
 }
 
 .page-main__knitting-form {
   @media (max-width: @lt-tablet) {
-    grid-column: 2 / 3;
+    grid-column: 3 / 4;
     padding-top: 30px;
   }
 
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-column: 1 / 4;
+    grid-column: 1 / -1;
   }
 
   @media (min-width: @tablet-width) and (max-width: @lt-desktop) {
-    grid-template-columns: 1fr 668px 1fr;
+    grid-template-columns: 1fr 87% 1fr;
     padding-top: 63px;
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: 1fr 1050px 1fr;
     padding-top: 61px;
+  }
+
+  @media (min-width: @desktop-width) and (max-width: 1549px) {
+    grid-template-columns: 1fr 91% 1fr;
+  }
+
+  @media (min-width: 1550px) {
+    grid-template-columns: 1fr 1410px 1fr;
   }
 }
 

@@ -60,15 +60,15 @@
   }
 
   @media (min-width: @tablet-width) {
-    grid-column: 1 / 4;
+    grid-column: 1 / -1;
+
+    & > * {
+      grid-column: 4 / 5;
+    }
   }
 
   @media (min-width: @tablet-width) and (max-width: @lt-desktop) {
-    grid-template-columns: 1fr 167px 501px 1fr;
-
-    & > * {
-      grid-column: 3 / 4;
-    }
+    grid-template-columns: 1fr 6.5% 22% 65% 6.5% 1fr;
 
     &--type {
       padding-bottom: 49px;
@@ -104,19 +104,13 @@
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: 1fr 175px 875px 1fr;
-
-    & > * {
-      grid-column: 3 / 4;
-    }
-
     &--type {
       padding-bottom: 50px;
     }
 
     &--color {
-      padding-top: 48px;
-      padding-bottom: 52px;
+      padding-top: 50px;
+      padding-bottom: 50px;
       background-color: @gray-bg;
     }
 
@@ -141,6 +135,14 @@
       padding-top: 50px;
       padding-bottom: 49px;
     }
+  }
+
+  @media (min-width: @desktop-width) and (max-width: 1549px) {
+    grid-template-columns: 1fr 4% 15.5% 76.5% 4% 1fr;
+  }
+
+  @media (min-width: 1550px) {
+    grid-template-columns: 1fr 62px 240px 1186px 62px 1fr;
   }
 }
 
@@ -266,8 +268,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: repeat(3, 240px);
-    gap: 24px 22px;
+    grid-template-columns: repeat(3, 28%);
+    gap: 24px 18px;
   }
 }
 
@@ -379,7 +381,7 @@
 .form-filter__item--email,
 .form-filter__item--add {
   @media (min-width: @desktop-width) {
-    max-width: 700px;
+    max-width: 80%;
   }
 }
 

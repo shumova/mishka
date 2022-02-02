@@ -44,6 +44,8 @@
   }
 
   @media (min-width: @tablet-width) and (max-width: @lt-desktop) {
+    width: 668px;
+    justify-self: center;
     font-size: 43px;
     line-height: 50px;
   }
@@ -77,15 +79,18 @@
   }
 
   @media (min-width: @tablet-width) and (max-width: @lt-desktop) {
+    width: 668px;
     margin-top: 41px;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 53px;
+    justify-self: center;
   }
 
   @media (min-width: @desktop-width) {
     margin-top: 39px;
-    grid-template-columns: repeat(2, auto);
-    gap: 52px 117px;
+    padding-right: 133px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 52px 38px;
   }
 }
 
@@ -181,5 +186,15 @@
 
   @media (min-width: @desktop-width) {
     gap: 20px;
+  }
+}
+
+.advantages__item-br {
+  @media (min-width: 340px) and (max-width: @lt-tablet) {
+    display: none;
+  }
+
+  @media (min-width: 1240px) {
+    display: none;
   }
 }
